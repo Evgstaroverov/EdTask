@@ -50,6 +50,11 @@ class IntervalsList extends Command
 
         $left  = (int) $this->option('left');
         $right = (int) $this->option('right');
+		
+		if ($left >= $right) {
+            $this->error('Левое значение не может быть меньше или равно правому значению.');
+            return 2; // Возвращаем код ошибки
+        }
 
         // Получаем интервалы
         $intervals = $this->getIntersectingIntervals($left, $right);
