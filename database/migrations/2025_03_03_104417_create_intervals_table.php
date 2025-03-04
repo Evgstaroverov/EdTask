@@ -18,6 +18,10 @@ class CreateIntervalsTable extends Migration
 			$table->integer('start')->nullable(false);
             $table->integer('end')->nullable();
         });
+		
+		Schema::table('intervals', function (Blueprint $table) {
+			$table->index(['start', 'end']); // Составной индекс на start и end
+		});
     }
 
     /**
