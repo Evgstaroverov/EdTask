@@ -1,7 +1,7 @@
 
 Проект реализующий консольную artisan-команду в Laravel для работы с интервалами.
 
-#Установка
+# Установка
 
 1. Клонирование репозитория:
 git clone https://github.com/Evgstaroverov/EdTask.git
@@ -23,7 +23,7 @@ php artisan key:generate
 php artisan migrate --seed
 
 
-#Использование
+# Использование
 
 Команда, извлекающая из БД интервалы, пересекающиеся с интервалом [N, M].
 Пример команды:
@@ -31,7 +31,7 @@ php artisan intervals:list --left=15 --right=30
 
 
 
-#Структура проекта(частично)
+# Структура проекта(частично)
 
 app/Console/Commands/IntervalsList.php: Код команды intervals:list.
 database/migrations/: Миграции для создания таблицы intervals.
