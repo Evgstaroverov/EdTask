@@ -6,7 +6,9 @@
 # Установка
 
 1. Клонирование репозитория:
+```bash
 git clone https://github.com/Evgstaroverov/EdTask.git
+```
 
 2.  Переход в директорию с репозиторием:
 ```bash
