@@ -46,10 +46,9 @@ php artisan intervals:list --left=15 --right=30
 
 # Структура проекта(частично)
 
-- app/Console/Commands/IntervalsList.php: Код команды intervals:list.
-- database/migrations/: Миграции для создания таблицы intervals.
-- database/seeders/IntervalsTableSeeder.php: Сидер для заполнения таблицы случайными данными.
-- routes/console.php: Консольные маршруты (если используются).
-- .env: Файл конфигурации окружения.
+- `app/Console/Commands/IntervalsList.php` : Код команды intervals:list.
+- `database/migrations/` : Миграции для создания таблицы intervals.
+- `database/seeders/IntervalsTableSeeder.php `: Сидер для заполнения таблицы случайными данными.
+- `.env` : Файл конфигурации окружения.
 
 
